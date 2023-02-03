@@ -62,3 +62,18 @@ label {
     cursor: pointer;
     margin-left: 20px;
 }
+
+@media screen and (max-width: 800px) {
+    .vignetteContainer {
+        width: auto;
+        margin: 10px 0px;
+    }
+
+    .vignetteContent{
+        width: auto;
+    }
+
+    .vignetteContainer h1{
+        font-size: 55px;
+    }
+}
