@@ -5,3 +5,11 @@
     margin-top: 50px;
     width: 100%;
 }
+
+@media screen and(max-width : 800px) {
+    .vignetteArea {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
