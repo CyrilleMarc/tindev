@@ -1,0 +1,64 @@
+.vignetteContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border: 2px solid #6ce200;
+    border-radius: 3%;
+    color: white;
+    padding: 20px 20px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 25px;
+
+}
+
+.vignetteContainer h1 {
+    margin: 0px;
+    color: #6ce200;
+
+}
+
+label {
+    font-weight:400;
+}
+
+.vignetteContainer h3{
+    text-align: center;
+    font-weight:600;
+}
+
+.vignetteContent{
+    width: 100%;
+}
+
+.vignetteContent button {
+    width: 150px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 25px;
+    background-color: #6ce200;
+    font-weight: 900;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #2c2c2c;
+    
+}
+
+.vignetteContent input {
+    width: 95%;
+    height: 20px;
+    margin: 10px 0px;
+    border-radius: 3px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.linkIsConnected{
+    text-decoration: underline;
+    color: #6ce200;
+    cursor: pointer;
+    margin-left: 20px;
+}

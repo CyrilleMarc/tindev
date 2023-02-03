@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+h1{
+    font-size: 70px;
+    color: #6ce200;
+    text-align: center;
+}
