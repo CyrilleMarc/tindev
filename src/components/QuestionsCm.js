@@ -33,11 +33,16 @@ const QuestionsCm = () => {
 
   return (
     <div className="carousselContainer">
+    <div className="buttonTitle">
       <span onClick={handlePrevious} class="material-symbols-outlined">
         arrow_circle_left
       </span>
-      <div className="contentQuestion">
         <h3>{slides[currentIndex].question}</h3>
+        <span onClick={handleNext} class="material-symbols-outlined">
+        arrow_circle_right
+      </span>
+      </div>
+      <div className="contentQuestion">
         {slides[currentIndex].options.map((option) => (
           <div className="gridOptions" key={option}>
             {slides[currentIndex].type === "multiple" ? (
@@ -60,9 +65,6 @@ const QuestionsCm = () => {
           </div>
         ))}
       </div>
-      <span onClick={handleNext} class="material-symbols-outlined">
-        arrow_circle_right
-      </span>
     </div>
   );
 };
