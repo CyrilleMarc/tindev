@@ -2,7 +2,7 @@ import React from "react";
 import QuestionnaireHeader from "../components/QuestionnaireHeader";
 import QuestionsCm from "../components/QuestionsCm";
 
-function Questionnaire() {
+function QuestionnaireRecruteur() {
   return (
     <div>
       <div>
@@ -15,4 +15,4 @@ function Questionnaire() {
   );
 }
 
-export default Questionnaire;
+export default QuestionnaireRecruteur;
