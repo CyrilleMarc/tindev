@@ -3,9 +3,9 @@
     margin-top: 30px;
     padding: 0px;
     display: flex;
-    align-items: stretch;
+    align-items: flex-start;
     justify-content: space-evenly;
-    height: auto;
+    height: 100%;
     color: white;
 }
 
@@ -54,6 +54,8 @@
 
     .contentQuestion h3 {
         margin-top: auto;
+        width: auto;
+           
        
     
     }
