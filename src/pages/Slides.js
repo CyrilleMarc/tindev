@@ -1,6 +1,6 @@
 const slides = [
   {
-    question: "Languages?",
+    question: "Languages",
     type: "checkbox",
     options: [
       "C",
@@ -14,7 +14,7 @@ const slides = [
     ],
   },
   {
-    question: "Qualités recherchées ?",
+    question: "Qualités recherchées",
     type: "checkbox",
     options: [
       "Autonomie",
@@ -25,27 +25,27 @@ const slides = [
     ],
   },
   {
-    question: "Base de données ?",
+    question: "Base de données",
     type: "checkbox",
     options: ["Mysql", "Mongodb", "PostgreSql", "Redis"],
   },
   {
-    question: "Outils ?",
+    question: "Outils",
     type: "checkbox",
     options: ["Git", "Docker", ""],
   },
   {
-    question: "What is your favorite animal?",
+    question: "What is your favorite animal",
     type: "checkbox",
     options: ["Dog", "Cat", "Rabbit"],
   },
   {
-    question: "What is your favorite food?",
+    question: "What is your favorite food",
     type: "multiple",
     options: ["Pizza", "Hamburger", "Salad"],
   },
   {
-    question: "Télétravail ?",
+    question: "Télétravail",
     type: "checkbox",
     options: [
       "1 jour/semaine",
@@ -58,7 +58,7 @@ const slides = [
     ],
   },
   {
-    question: "Avantages ?",
+    question: "Avantages",
     type: "checkbox",
     options: [
       "Tickets restaurant",
@@ -68,7 +68,7 @@ const slides = [
     ],
   },
   {
-    question: "Salaire mensuel net ?",
+    question: "Salaire mensuel net",
     type: "checkbox",
     options: [
       "1500€ à 2000€",
