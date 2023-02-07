@@ -46,6 +46,7 @@
 
     .carousselContainer{
         width: auto;
+        min-height: 100vh;
     }
 
     .contentQuestion h3 {
