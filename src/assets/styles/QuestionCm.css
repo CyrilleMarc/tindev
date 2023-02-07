@@ -1,0 +1,43 @@
+.carousselContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60vh;
+}
+
+.contentQuestion{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentQuestion h3 {
+    font-size: 60px;
+    text-align: center;
+   
+
+}
+
+.contentQuestion p {
+    font-size: 60px;
+}
+
+.material-symbols-outlined{
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.material-symbols-outlined:hover {
+    color: #6ce200;
+}
+
+.gridOptions {
+    display: flex;
+    margin: 10px 20px;
+    font-size: 25px;
+}
+
+.gridOptions input {
+    margin: 0px 20px;
+}
+

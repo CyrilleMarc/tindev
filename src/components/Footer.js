@@ -14,7 +14,7 @@ function Footer() {
       <span>
         <SocialIcon
           bgColor="#6ce200"
-          url="https://www.github.com/in/cyrille-marc-3914a5130/"
+          url="https://github.com/CyrilleMarc/"
         />
       </span>
       <span>
