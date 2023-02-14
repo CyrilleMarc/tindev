@@ -48,7 +48,7 @@ function Vignette(props) {
               <input
                 type="text"
                 value={email}
-                placeholder=" Entrez votre email"
+                placeholder=" Entrez  email"
                 onChange={(e) => setEmail(e.target.value)}
               ></input>
               <br></br>
