@@ -1,41 +1,34 @@
 import "../assets/styles/vignette.css";
 import { useState } from "react";
-import axios from "axios";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 function Vignette(props) {
   const [isConnected, setIsConnected] = useState(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [isLogin, setIsLogin] = useState(false);
+  // const [isLogin, setIsLogin] = useState(false);
+  // const [isRecruteur, setIsRecruteur] = useState("/QuestionnaireRecruteur");
 
-  const postData = (e) => {
+  async function register(e) {
     e.preventDefault();
-    axios
-      .post("https://63dced822308e3e319f0a84e.mockapi.io/recruteurs", {
-        email,
-        password,
-      })
-      .then(() => {
-        console.log("user added");
-        setEmail("");
-        setPassword("");
+    try {
+      await fetch("http://localhost:5000/register", {
+        method: "POST",
+        body: JSON.stringify({ email, password }),
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
       });
-  };
+      setEmail("");
+      setPassword("");
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
-  const getData = () => {
-    // axios
-    //   .get("https://63dced822308e3e319f0a84e.mockapi.io/users", {
-    //     email,
-    //     password,
-    //   })
-    //   .then(() => {
-    setIsLogin(!isLogin);
-    navigate("/Questionnaire");
-
-    //   });
-  };
+  function getData() {
+    // login
+  }
 
   function handleChangeIsConnected() {
     setIsConnected(!isConnected);
@@ -67,7 +60,7 @@ function Vignette(props) {
                 onChange={(e) => setPassword(e.target.value)}
               ></input>
               <br></br>
-              <button onClick={postData} type="submit">
+              <button onClick={register} type="submit">
                 S'inscrire
               </button>
               <span

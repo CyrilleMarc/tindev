@@ -5,6 +5,8 @@ import Vignette from "../components/Vignette.js";
 import Footer from "../components/Footer.js";
 
 function Home() {
+
+
   return (
     <div>
       <Navbar />
@@ -14,9 +16,15 @@ function Home() {
           role2={"developpeurs"}
           h1={"Espace recruteurs"}
           inscription={"Inscription"}
+          
         />
 
-        <Vignette h1={"Espace développeurs"} connexion={"Connexion"} />
+        <Vignette
+          h1={"Espace développeurs"}
+          connexion={"Connexion"}
+          // handleConnect={handleConnect}
+          
+        />
       </div>
       <Footer />
     </div>

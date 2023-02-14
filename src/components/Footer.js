@@ -12,21 +12,15 @@ function Footer() {
         />
       </span>
       <span>
-        <SocialIcon
-          bgColor="#6ce200"
-          url="https://github.com/CyrilleMarc/"
-        />
+        <SocialIcon bgColor="#6ce200" url="https://github.com/CyrilleMarc/" />
+      </span>
+      <span>
+        <SocialIcon bgColor="#6ce200" url="mailto:cyrille.marc@epitech.eu" />
       </span>
       <span>
         <SocialIcon
           bgColor="#6ce200"
-          url="https://www.mailto.com/in/cyrille-marc-3914a5130/"
-        />
-      </span>
-      <span>
-        <SocialIcon
-          bgColor="#6ce200"
-          url="https://www.example.com/in/cyrille-marc-3914a5130/"
+          url="https://portfolio-cyrille-marc.netlify.app/"
         />
       </span>
     </div>

@@ -65,16 +65,6 @@ const slides = [
     ],
   },
   {
-    question: "What is your favorite animal",
-    type: "checkbox",
-    options: ["Dog", "Cat", "Rabbit"],
-  },
-  {
-    question: "What is your favorite food",
-    type: "multiple",
-    options: ["Pizza", "Hamburger", "Salad"],
-  },
-  {
     question: "Télétravail",
     type: "checkbox",
     options: [
