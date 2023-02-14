@@ -13,7 +13,7 @@ function Vignette(props) {
   async function register(e) {
     e.preventDefault();
     try {
-      await fetch("http://localhost:5000/register", {
+      await fetch("https://tindev.herokuapp.com/register", {
         method: "POST",
         body: JSON.stringify({ email, password }),
         headers: { "Content-Type": "application/json" },
