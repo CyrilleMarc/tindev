@@ -4,7 +4,6 @@
   justify-content: space-between;
 }
 
-
 .title {
   margin-left: 30%;
 }
@@ -33,7 +32,7 @@ img.title {
     justify-content: center;
   }
 
-  .title {
-    margin: 10px 0px;
+  img.title {
+    margin: 10px auto;
   }
 }

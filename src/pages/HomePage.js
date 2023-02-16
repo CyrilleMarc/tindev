@@ -1,15 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import NavBar from "../components/Navbar";
-import Footer from '../components/Footer'
-import '../assets/styles/HomePage.css';
+import Footer from "../components/Footer";
+import "../assets/styles/HomePage.css";
 
 function HomePage() {
   return (
-    <div className='HomePage'>
+    <div className="HomePage">
       <NavBar />
-      <div className='HomePageButton'>
-        <button>Vous êtes recruteur</button>
-        <button>Vous êtes développeur</button>
+      <div className="HomePageButton">
+        <Link to="./HomeRecruteur">
+          <button>Vous êtes recruteur</button>
+        </Link>
+        <Link to="./HomeDeveloppeur">
+          <button>Vous êtes développeur</button>
+        </Link>
       </div>
       <Footer />
     </div>

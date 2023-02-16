@@ -1,8 +1,8 @@
 .vignettesArea{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    margin-top: 50px;
+    justify-content: center;
+    margin: 50px auto 100px;
     width: 100%;
 }
 

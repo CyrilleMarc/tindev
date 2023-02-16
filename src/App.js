@@ -1,5 +1,6 @@
 import "./App.css";
-import Home from "./pages/Home.jsx";
+import HomeRecruteur from "./pages/HomeRecruteur";
+import HomeDeveloppeur from "./pages/HomeDeveloppeur";
 import HomePage from "./pages/HomePage.js";
 import QuestionnaireRecruteur from "./pages/QuestionnaireRecruteur";
 import QuestionnaireDeveloppeur from "./pages/QuestionnaireDeveloppeur";
@@ -13,7 +14,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/homeRecruteur" element={<HomeRecruteur />} />
+          <Route path="/homeDeveloppeur" element={<HomeDeveloppeur />} />
           <Route
             path="/questionnaireRecruteur"
             element={<QuestionnaireRecruteur />}
