@@ -1,35 +1,29 @@
-.HomePageButton{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin: 100px auto;
+.HomePageButton {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 100px auto;
 }
 
-.HomePageButton button{
-    height: 150px;
-    margin: 20px 0px;
-    background-color: #6ce200;
-    border: 0;
-    border-radius: 10px;
-    color: black;
-    font-size: 50px;
-    cursor: pointer;
-    opacity: 0.8;
-    font-weight: bold;
+.HomePageButton button {
+  height: 150px;
+  margin: 20px 0px;
+  background-color: #6ce200;
+  border: 0;
+  border-radius: 10px;
+  color: black;
+  font-size: 50px;
+  cursor: pointer;
+  opacity: 0.8;
+  font-weight: bold;
 }
 
-.HomePageButton button:hover{
-    opacity: 1;
+.HomePageButton button:hover {
+  opacity: 1;
 }
 
 @media screen and (max-width: 800px) {
-    . {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 90%;
-      
-      
-    }
-
+  .HomePageButton {
+    width: 90%;
   }
+}
