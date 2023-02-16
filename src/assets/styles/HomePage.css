@@ -1,8 +1,12 @@
+.HomePage{
+    max-height: 100vh;
+}
+
 .HomePageButton {
   display: flex;
   flex-direction: column;
   width: 60%;
-  margin: 100px auto;
+  margin: 50px auto 100px;
 }
 
 .HomePageButton button {
