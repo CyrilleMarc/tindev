@@ -15,7 +15,8 @@
 }
 
 .vignetteContainer h1 {
-    margin: 0px;
+    margin: 0px auto;
+    width: 100%;
     color: #6ce200;
 
 }

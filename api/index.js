@@ -23,18 +23,58 @@ mongoose
     console.log(error.message);
   });
 
-app.get("https://tindev.herokuapp.com/test", (req, res) => {
-  res.json("server ok");
+app.get("/edit", async (req, res) => {
+  res.json(await User.find());
 });
 
-app.post("https://tindev.herokuapp.com/register", async (req, res) => {
-  const { email, password } = req.body;
+app.get("/edit/:id", async (req, res) => {
+  const { id } = req.params;
+  console.log(req.params);
+  const userEdit = await User.findById(id);
+  res.json(userEdit);
+});
+
+app.delete("/delete/:id", async (req, res) => {
+  const { id } = req.params;
+  try {
+    const deletedUser = await User.findByIdAndDelete(id);
+    res.json(deletedUser);
+  } catch (error) {
+    console.log(error);
+    res.status(400).json(error);
+  }
+});
+
+
+app.post("/register", async (req, res) => {
+  const { email, password, isRecruteur, isDeveloppeur } = req.body;
   try {
     const userDoc = await User.create({
       email,
       password,
+      isRecruteur, 
+      isDeveloppeur,
+      
     });
+    // console.log(userDoc._id);
     res.json(userDoc);
+  } catch (error) {
+    console.log(error);
+    res.status(400).json(error);
+  }
+});
+
+app.put("/edit/:id", async (req, res) => {
+  const { id } = req.params;
+  const { email, password } = req.body;
+
+  try {
+    const updatedUser = await User.findByIdAndUpdate(
+      id,
+      { email, password },
+      { new: true }
+    );
+    res.json(updatedUser);
   } catch (error) {
     console.log(error);
     res.status(400).json(error);

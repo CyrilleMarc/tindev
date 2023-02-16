@@ -13,11 +13,10 @@ function Vignette(props) {
   async function register(e) {
     e.preventDefault();
     try {
-      await fetch("https://tindev.herokuapp.com/register", {
+      await fetch("http://localhost:3002/register", {
         method: "POST",
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ email, password}),
         headers: { "Content-Type": "application/json" },
-        mode: "no-cors",
         credentials: "include",
       });
       setEmail("");
@@ -27,8 +26,8 @@ function Vignette(props) {
     }
   }
 
-  function getData() {
-    // login
+  function login() {
+    //login
   }
 
   function handleChangeIsConnected() {
@@ -88,7 +87,7 @@ function Vignette(props) {
                 placeholder=" Entrez votre mot de passe"
               ></input>
               <br></br>
-              <button type="submit" onClick={getData}>
+              <button type="submit" onClick={login}>
                 Se connecter
               </button>
               <span

@@ -13,16 +13,13 @@ function Home() {
       <div className="vignettesArea">
         <Vignette
           role1={"recruteurs"}
-          role2={"developpeurs"}
           h1={"Espace recruteurs"}
           inscription={"Inscription"}
-          
         />
 
         <Vignette
           h1={"Espace développeurs"}
           connexion={"Connexion"}
-          // handleConnect={handleConnect}
           
         />
       </div>

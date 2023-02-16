@@ -5,7 +5,7 @@ import QuestionsCm from "../components/QuestionsCm";
 function QuestionnaireDeveloppeur() {
   return (
     <div>
-      <div>
+      <div className='questionnaire'>
         <QuestionnaireHeader title={"developpeur"} />
       </div>
       <div>
